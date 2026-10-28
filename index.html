@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CMA Exam Master | Accounting, Tax, Excel & Exam Practice</title>
+  <meta name="description" content="Learn accounting with clear notes, practical examples, interactive quizzes, and exam practice in financial accounting, cost accounting, taxation, auditing, business law, and Excel.">
+  <meta name="theme-color" content="#132747">
+  <meta property="og:title" content="CMA Exam Master">
+  <meta property="og:description" content="Learn smart. Practise daily. Build accounting confidence.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://YOUR-SITE-URL.example/">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="CMA Exam Master home">
+        <span class="brand-mark" aria-hidden="true">CM</span>
+        <span><strong>CMA Exam Master</strong><small>Accounting made practical</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav">☰ <span class="sr-only">Open navigation</span></button>
+      <nav id="primaryNav" class="nav">
+        <a href="#subjects">Subjects</a>
+        <a href="#practice">Quiz Practice</a>
+        <a href="#study-method">Study Method</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">YOUR ACCOUNTING STUDY COMPANION</p>
+          <h1>Learn smart.<br><span>Practise with purpose.</span></h1>
+          <p class="hero-lead">Build your accounting confidence with simple explanations, real-world examples, practice questions, and instant quiz feedback.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#practice">Start a quiz <span aria-hidden="true">→</span></a>
+            <a class="btn btn-secondary" href="#subjects">Explore subjects</a>
+          </div>
+          <div class="hero-proof"><span>✓</span> Beginner-friendly <span>✓</span> Exam-oriented <span>✓</span> Works on mobile</div>
+        </div>
+        <div class="hero-panel" aria-label="Study progress preview">
+          <div class="panel-top"><span class="dot dot-blue"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="panel-label">YOUR STUDY DASHBOARD</span></div>
+          <div class="panel-content">
+            <div class="mini-label">PRACTICE SESSION</div>
+            <h2>Small steps. Strong concepts.</h2>
+            <div class="progress-row"><span>Concepts practised</span><strong id="conceptCount">6 topics</strong></div>
+            <div class="progress-track"><span style="width:68%"></span></div>
+            <div class="panel-stats"><div><strong>Instant</strong><small>answer feedback</small></div><div><strong>Practical</strong><small>examples</small></div></div>
+            <div class="tip-box"><span aria-hidden="true">✦</span><span><strong>Study tip</strong><br>Understand why an entry is made before memorising the format.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-search">
+      <div class="container search-row">
+        <div><strong>What do you want to learn today?</strong><span>Find a subject or jump straight into practice.</span></div>
+        <label class="search-box"><span class="sr-only">Search subjects</span><span aria-hidden="true">⌕</span><input id="subjectSearch" type="search" placeholder="Search accounting, GST, Excel…" autocomplete="off"><button id="clearSearch" type="button" aria-label="Clear search">×</button></label>
+      </div>
+    </section>
+
+    <section class="section" id="subjects">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">LEARNING LIBRARY</p><h2>Explore subjects</h2><p>Choose a subject to see its learning focus and start a short quiz.</p></div><span class="heading-note">Built for steady progress</span></div>
+        <div class="subject-grid" id="subjectGrid">
+          <article class="subject-card" data-search="financial accounting balance sheet income statement cash flow depreciation branch partnership company accounts">
+            <div class="subject-icon icon-blue">▤</div><div class="subject-meta">ACCOUNTING</div><h3>Financial Accounting</h3><p>Journal entries, final accounts, accounting standards, cash flow statements, and adjustments.</p><div class="card-bottom"><span>Concepts + practice</span><button class="text-button start-subject" data-subject="financial">Practice quiz →</button></div>
+          </article>
+          <article class="subject-card" data-search="cost accounting costing marginal costing standard costing variance material labour overhead">
+            <div class="subject-icon icon-purple">◫</div><div class="subject-meta">COST & MANAGEMENT</div><h3>Cost Accounting</h3><p>Material, labour, overheads, marginal costing, budgets, and variance analysis.</p><div class="card-bottom"><span>Calculations</span><button class="text-button start-subject" data-subject="cost">Practice quiz →</button></div>
+          </article>
+          <article class="subject-card" data-search="taxation income tax gst goods services tax vat tds returns">
+            <div class="subject-icon icon-green">%</div><div class="subject-meta">TAXATION</div><h3>Taxation & GST</h3><p>Tax basics, GST concepts, input tax credit, return workflows, and practical calculations.</p><div class="card-bottom"><span>Rules + examples</span><button class="text-button start-subject" data-subject="tax">Practice quiz →</button></div>
+          </article>
+          <article class="subject-card" data-search="auditing assurance internal audit evidence vouching verification">
+            <div class="subject-icon icon-orange">✓</div><div class="subject-meta">AUDIT</div><h3>Auditing & Assurance</h3><p>Audit evidence, internal controls, vouching, verification, and audit reporting.</p><div class="card-bottom"><span>Exam revision</span><button class="text-button start-subject" data-subject="audit">Practice quiz →</button></div>
+          </article>
+          <article class="subject-card" data-search="business law ethics contract company act directors negotiable instruments">
+            <div class="subject-icon icon-red">§</div><div class="subject-meta">LAW & ETHICS</div><h3>Business Law & Ethics</h3><p>Contracts, company law, negotiable instruments, workplace laws, and ethical decisions.</p><div class="card-bottom"><span>MCQs + explanations</span><button class="text-button start-subject" data-subject="law">Practice quiz →</button></div>
+          </article>
+          <article class="subject-card" data-search="excel spreadsheet xlookup sumifs pivot table dashboard power bi mis">
+            <div class="subject-icon icon-teal">▦</div><div class="subject-meta">WORKPLACE SKILLS</div><h3>Excel & MIS</h3><p>Formulas, lookups, PivotTables, reconciliations, reporting, and dashboards.</p><div class="card-bottom"><span>Hands-on skills</span><button class="text-button start-subject" data-subject="excel">Practice quiz →</button></div>
+          </article>
+        </div>
+        <p class="empty-state" id="noSubjects" hidden>No subjects match that search. Try “GST”, “Excel”, or “cash flow”.</p>
+      </div>
+    </section>
+
+    <section class="section practice-section" id="practice">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">TEST YOUR UNDERSTANDING</p><h2>Interactive quiz practice</h2><p>Select a subject, answer questions, and get immediate feedback.</p></div></div>
+        <div class="quiz-layout">
+          <aside class="quiz-sidebar">
+            <label for="quizSubject">Choose a subject</label>
+            <select id="quizSubject">
+              <option value="all">All sample questions</option>
+              <option value="financial">Financial Accounting</option>
+              <option value="cost">Cost Accounting</option>
+              <option value="tax">Taxation & GST</option>
+              <option value="audit">Auditing & Assurance</option>
+              <option value="law">Business Law & Ethics</option>
+              <option value="excel">Excel & MIS</option>
+            </select>
+            <div class="score-card"><span class="score-label">CURRENT SCORE</span><strong id="scoreValue">0 / 0</strong><div class="score-track"><span id="scoreBar"></span></div><small id="answeredValue">Answer a question to begin.</small></div>
+            <button class="btn btn-primary full-width" id="resetQuiz" type="button">Restart quiz</button>
+          </aside>
+          <div class="quiz-main">
+            <div class="quiz-topline"><span id="quizCounter">Question 1</span><span class="pill">Instant feedback</span></div>
+            <div id="quizQuestion" class="quiz-question" aria-live="polite">
+              <h3>Loading your first question…</h3>
+            </div>
+            <div id="quizOptions" class="quiz-options"></div>
+            <div id="quizFeedback" class="quiz-feedback" role="status" hidden></div>
+            <div class="quiz-controls"><button id="prevQuestion" class="btn btn-secondary" type="button">← Previous</button><button id="nextQuestion" class="btn btn-primary" type="button">Next question →</button></div>
+            <p class="quiz-note">Sample questions are for learning and practice. Always check the current syllabus and applicable law for your examination.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section method-section" id="study-method">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">A SIMPLE STUDY ROUTINE</p><h2>Learn the logic, then practise</h2><p>Build understanding step by step instead of memorising blindly.</p></div></div>
+        <div class="method-grid">
+          <article><span class="method-number">01</span><h3>Understand the idea</h3><p>Start with a familiar real-life example and identify the problem the accounting rule solves.</p></article>
+          <article><span class="method-number">02</span><h3>Work through it</h3><p>Follow the calculation, entry, or rule in small steps and understand why each step matters.</p></article>
+          <article><span class="method-number">03</span><h3>Test yourself</h3><p>Answer practice questions, review feedback, and revisit the concepts you missed.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-box"><div><p class="eyebrow">ABOUT CMA EXAM MASTER</p><h2>A practical starting point for accounting students.</h2><p>CMA Exam Master is designed as a learning companion for students and working professionals who want to strengthen accounting concepts and workplace skills.</p></div><div class="about-callout"><strong>Learn at your own pace.</strong><p>Use the sample quiz today, then expand the library with verified questions, detailed notes, and additional practice sets.</p><a href="#practice" class="text-button">Try the quiz →</a></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="./"><span class="brand-mark">CM</span><span><strong>CMA Exam Master</strong><small>Accounting made practical</small></span></a><div><p>Independent educational resource. Not affiliated with or endorsed by ICMAI or any examination body.</p><p>© <span id="year"></span> CMA Exam Master</p></div></div></footer>
+</body>
+</html>
